@@ -1,0 +1,26 @@
+{
+    "name": "cout-plugin",
+    "description": "Adds a shortcut to insert std::cout.",
+    "version": "0.0.2",
+    "engines": {
+        "vscode": "^1.94.0"
+    },
+    "publisher": "cofffeen",
+    "activationEvents": [],
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "extension.coutPlugin",
+                "title": "Insert std::cout"
+            }
+        ],
+        "keybindings": [
+            {
+                "command": "extension.coutPlugin",
+                "key": "ctrl+shift+c",
+                "when": "editorTextFocus && editorLangId == 'cpp'"
+            }
+        ]
+    }
+}
